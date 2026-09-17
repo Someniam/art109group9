@@ -1,11 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Public Domain / 1930</title>
 </head>
 <body>
-    <h1>Hello this is a test page</h1>
+  <header>
+    <p>Public Domain / 1930</p>
+    <hr>
+  </header>
+
+  <main>
+    <h1>Find something from 1930.</h1>
+    <p>A searchable index of books, films, music, art, and cultural history entering the public domain.</p>
+
+    <form action="/" method="get">
+      <label for="search-input">Search the collection</label>
+      <input id="search-input" name="q" type="search" value="{{QUERY}}" placeholder="Title, person, or subject">
+      <button type="submit">Search</button>
+    </form>
+
+    <p>{{STATUS}}</p>
+    {{RESULTS}}
+  </main>
+
+  <footer>
+    <hr>
+    <p>1930 Public Domain Index</p>
+  </footer>
 </body>
 </html>
